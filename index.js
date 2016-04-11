@@ -4,7 +4,7 @@ $(".readlessHide").hide();
 $(".readmore").click(readMore);
 $(".readlessHide").click(readLess);
 $(".learnmore").click(learnMore);
-$(".button blue").click(event);
+$(".buttonBlue").click(prevent);
 
 function readMore() {
 	$("#show-this-on-click").slideDown();
@@ -23,8 +23,8 @@ function learnMore() {
 	$(".learnmore").hide();
 }
 
-function event() {
-	(".button blue").preventDefault;
+function prevent() {
+	$(".buttonBlue").event.preventDefault;
 }
 
 });
